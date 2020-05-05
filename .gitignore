@@ -1,0 +1,8 @@
+# files to be ignored
+target/
+log/
+
+.classpath
+.project
+*.log
+*.xml

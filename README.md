@@ -1,1 +1,1 @@
-# poc-with-java
+# this is web application using Java 

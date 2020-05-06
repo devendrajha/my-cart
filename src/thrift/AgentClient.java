@@ -16,6 +16,8 @@ public class AgentClient {
 	List<Integer> depLocalIdList = new ArrayList<Integer>();
 	EpCreateStruct epStruct;
 
+	
+	
 	public String activateProduct(AgentService.Client client, String serialNumber, String deviceId) {
 		deviceInfoStruct.setMAC("1256-7889-0158-4090-1100");
 		deviceInfoStruct.setOS("RTOS");
@@ -70,6 +72,19 @@ public class AgentClient {
 		}
 		return connect.toString();
 	}
+
+	public String productConnect2(AgentService.Client client) {
+		Result connect = null;
+		try {
+			Thread.sleep(6000);
+			connect = client.Connect();
+			log.debug("Response of connect is " + connect);
+		} catch (InterruptedException | TException e) {
+			log.debug("Device not Connected ");
+		}
+		return connect.toString();
+	}
+
 
 	public String Disconnect(AgentService.Client client)  {
 		Result connect = null;

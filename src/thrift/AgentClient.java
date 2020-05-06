@@ -61,18 +61,6 @@ public class AgentClient {
 
 	}
 
-		public String productConnect3(AgentService.Client client) {
-		Result connect = null;
-		try {
-			Thread.sleep(6000);
-			connect = client.Connect();
-			log.debug("Response of connect is " + connect);
-		} catch (InterruptedException | TException e) {
-			log.debug("Device not Connected ");
-		}
-		return connect.toString();
-	}
-
 
 	public String productConnect(AgentService.Client client) {
 		Result connect = null;

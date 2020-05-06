@@ -1,1 +1,1 @@
-# this is web application using Javaand other Web component
+# this is web application using Java and other Web component

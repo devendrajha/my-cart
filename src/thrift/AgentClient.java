@@ -8,6 +8,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.apache.thrift.TException;
 
+
 public class AgentClient {
 
 	private static final Logger log = Logger.getLogger(AgentClient.class.getName());

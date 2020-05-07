@@ -13,8 +13,6 @@ import javax.servlet.http.HttpSession;
 import shoppingCart.dao.LoginDao;
 import shoppingCart.model.LoginBean;
 
-
-
 @WebServlet("/login")
 public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -34,7 +32,8 @@ public class LoginController extends HttpServlet {
 		authenticate(request, response);
 	}
 
-	private void authenticate(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+	private void authenticate(HttpServletRequest request, HttpServletResponse response)
+			throws IOException, ServletException {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		LoginBean loginBean = new LoginBean();
